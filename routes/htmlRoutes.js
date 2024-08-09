@@ -2,7 +2,7 @@ const html = require('express').Router();
 const path = require('path');
 
 //HTML route to index page
-html.get('*', (req, res) => {
+html.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
